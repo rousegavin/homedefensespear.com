@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home Defense Spear — No Permit. No Noise. Always Ready.</title>
+<meta name="description" content="The best spears for home defense. No background check, no noise, no waiting period. Three picks for every home layout — apartments to open floor plans.">
+<meta name="keywords" content="home defense spear, spear for home defense, cold steel assegai, M48 spear, reapr survival spear, self defense spear">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Source+Sans+3:wght@300;400;600;700&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #0a0a12;
+  --bg-elevated: #12121a;
+  --bg-card: #1a1a24;
+  --text-primary: #e8e6e3;
+  --text-secondary: #94918a;
+  --text-muted: #6b6860;
+  --accent-gold: #c9a84c;
+  --accent-red: #e94560;
+  --border: #2a2a35;
+  --serif: 'Cinzel', Georgia, serif;
+  --sans: 'Source Sans 3', -apple-system, sans-serif;
+  --mono: 'JetBrains Mono', monospace;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; font-size: 16px; }
+body { font-family: var(--sans); background: var(--bg); color: var(--text-primary); line-height: 1.7; overflow-x: hidden; }
+body::before { content: ''; position: fixed; inset: 0; background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E"); pointer-events: none; z-index: 9999; }
+a { color: var(--accent-gold); text-decoration: none; transition: opacity 0.2s; }
+a:hover { opacity: 0.8; }
+
+/* NAV */
+nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; backdrop-filter: blur(20px); background: rgba(10, 10, 18, 0.92); border-bottom: 1px solid var(--border); }
+.nav-logo { font-family: var(--serif); font-size: 1rem; font-weight: 700; color: var(--text-primary); letter-spacing: 0.05em; text-transform: uppercase; }
+.nav-links { display: flex; gap: 2rem; list-style: none; }
+.nav-links a { color: var(--text-secondary); font-size: 0.82rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; transition: color 0.2s; }
+.nav-links a:hover { color: var(--accent-gold); opacity: 1; }
+.nav-toggle { display: none; background: none; border: none; cursor: pointer; padding: 0.5rem; }
+.nav-toggle span { display: block; width: 22px; height: 2px; background: var(--text-primary); margin: 5px 0; transition: all 0.3s; }
+
+/* HERO */
+.hero { min-height: 100vh; display: flex; align-items: center; justify-content: center; position: relative; padding: 6rem 2rem 4rem; background: linear-gradient(135deg, var(--bg) 0%, #0d0d1a 50%, var(--bg) 100%); }
+.hero-content { max-width: 680px; text-align: center; position: relative; z-index: 1; }
+.hero-eyebrow { font-family: var(--mono); font-size: 0.7rem; color: var(--accent-gold); letter-spacing: 0.22em; text-transform: uppercase; margin-bottom: 1.75rem; animation: fadeUp 0.8s ease both; }
+.hero h1 { font-family: var(--serif); font-size: clamp(2.4rem, 6vw, 4rem); font-weight: 700; line-height: 1.05; margin-bottom: 1rem; letter-spacing: 0.02em; animation: fadeUp 0.8s ease 0.1s both; }
+.hero-subtitle { font-size: clamp(1rem, 2vw, 1.2rem); color: var(--text-secondary); margin-bottom: 1.5rem; animation: fadeUp 0.8s ease 0.2s both; }
+.hero-desc { font-size: 1rem; color: rgba(232, 230, 227, 0.65); line-height: 1.85; max-width: 520px; margin: 0 auto 2.5rem; animation: fadeUp 0.8s ease 0.3s both; }
+.hero-cta { display: inline-flex; gap: 1rem; flex-wrap: wrap; justify-content: center; animation: fadeUp 0.8s ease 0.4s both; }
+
+/* BUTTONS */
+.btn { display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.85rem 2rem; border-radius: 4px; font-family: var(--sans); font-size: 0.85rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; text-decoration: none; border: none; cursor: pointer; transition: all 0.25s; }
+.btn-primary { background: var(--accent-red); color: white; box-shadow: 0 4px 20px rgba(233, 69, 96, 0.25); }
+.btn-primary:hover { background: #ff5a73; transform: translateY(-2px); box-shadow: 0 6px 30px rgba(233, 69, 96, 0.35); opacity: 1; }
+.btn-secondary { background: transparent; color: var(--accent-gold); border: 1px solid rgba(201, 168, 76, 0.4); }
+.btn-secondary:hover { background: rgba(201, 168, 76, 0.08); opacity: 1; }
+.btn-full { width: 100%; justify-content: center; margin-top: auto; }
+
+/* SECTIONS */
+section { padding: 5rem 2rem; }
+.section-inner { max-width: 1100px; margin: 0 auto; }
+.section-label { font-family: var(--mono); font-size: 0.68rem; color: var(--accent-gold); letter-spacing: 0.22em; text-transform: uppercase; margin-bottom: 0.75rem; display: block; }
+.section-title { font-family: var(--serif); font-size: clamp(1.8rem, 4vw, 2.5rem); font-weight: 600; margin-bottom: 1rem; line-height: 1.2; }
+.section-desc { color: var(--text-secondary); font-size: 1rem; max-width: 580px; margin-bottom: 3rem; line-height: 1.75; }
+
+/* PILLARS */
+.pillars { background: var(--bg-elevated); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+.pillars-grid { display: grid; grid-template-columns: repeat(3, 1fr); border: 1px solid var(--border); border-radius: 6px; overflow: hidden; }
+.pillar { background: var(--bg-card); padding: 2.5rem 2rem; border-right: 1px solid var(--border); }
+.pillar:last-child { border-right: none; }
+.pillar-num { font-family: var(--mono); font-size: 0.68rem; color: var(--accent-gold); letter-spacing: 0.15em; margin-bottom: 1.25rem; display: block; }
+.pillar h3 { font-family: var(--serif); font-size: 1.15rem; font-weight: 600; margin-bottom: 0.75rem; color: var(--text-primary); }
+.pillar p { color: var(--text-secondary); font-size: 0.93rem; line-height: 1.65; }
+
+/* PRODUCTS */
+.products { background: var(--bg); }
+.product-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(310px, 1fr)); gap: 1.5rem; }
+.product-card { background: var(--bg-card); border: 1px solid var(--border); border-radius: 8px; overflow: hidden; transition: all 0.3s; display: flex; flex-direction: column; }
+.product-card:hover { transform: translateY(-3px); box-shadow: 0 16px 40px rgba(0, 0, 0, 0.4); border-color: rgba(201, 168, 76, 0.25); }
+.product-card.featured { border-color: rgba(233, 69, 96, 0.3); }
+.product-info { padding: 2rem; flex: 1; display: flex; flex-direction: column; }
+.product-tag { font-family: var(--mono); font-size: 0.62rem; color: var(--accent-red); letter-spacing: 0.18em; text-transform: uppercase; margin-bottom: 0.4rem; font-weight: 600; }
+.product-rating { font-family: var(--mono); font-size: 0.68rem; color: var(--text-muted); margin-bottom: 0.85rem; }
+.product-info h3 { font-family: var(--serif); font-size: 1.3rem; font-weight: 600; margin-bottom: 0.3rem; }
+.product-info h4 { font-size: 0.88rem; color: var(--accent-gold); font-weight: 600; margin-bottom: 1rem; letter-spacing: 0.02em; }
+.product-info p { color: var(--text-secondary); font-size: 0.93rem; line-height: 1.65; margin-bottom: 1.5rem; flex: 1; }
+.specs { width: 100%; border-collapse: collapse; margin-bottom: 1.5rem; font-size: 0.83rem; }
+.specs td { padding: 0.55rem 0; border-bottom: 1px solid var(--border); color: var(--text-secondary); }
+.specs td:first-child { color: var(--text-muted); font-family: var(--mono); font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.05em; width: 38%; }
+.specs tr:last-child td { border-bottom: none; }
+
+/* COMPARISON */
+.comparison { background: var(--bg-elevated); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+.comparison-table-wrap { overflow-x: auto; margin-bottom: 3.5rem; }
+.comparison-table { width: 100%; border-collapse: collapse; font-size: 0.9rem; min-width: 560px; }
+.comparison-table th { font-family: var(--serif); font-size: 0.95rem; font-weight: 600; padding: 1rem 1.25rem; border-bottom: 2px solid var(--border); text-align: left; color: var(--text-primary); background: var(--bg-card); }
+.comparison-table th:first-child { font-family: var(--mono); font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-muted); font-weight: 400; }
+.comparison-table td { padding: 0.85rem 1.25rem; border-bottom: 1px solid var(--border); color: var(--text-secondary); }
+.comparison-table td:first-child { font-family: var(--mono); font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-muted); }
+.comparison-table tr:last-child td { border-bottom: none; }
+.comparison-table tr:hover td { background: rgba(255,255,255,0.015); }
+.highlight { color: var(--accent-gold) !important; font-weight: 600; }
+
+/* PICKER */
+.picker-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+.picker-card { background: var(--bg-card); border: 1px solid var(--border); border-radius: 6px; padding: 1.75rem; }
+.picker-scenario { font-family: var(--mono); font-size: 0.68rem; color: var(--text-muted); letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 0.75rem; }
+.picker-rec { font-family: var(--serif); font-size: 1.1rem; font-weight: 600; color: var(--accent-gold); margin-bottom: 0.5rem; }
+.picker-desc { font-size: 0.88rem; color: var(--text-secondary); line-height: 1.65; }
+
+/* FAQ */
+.faq { background: var(--bg); }
+.faq-list { max-width: 800px; margin: 0 auto; }
+.faq-item { border-bottom: 1px solid var(--border); }
+.faq-question { width: 100%; text-align: left; padding: 1.4rem 0; background: none; border: none; color: var(--text-primary); font-family: var(--serif); font-size: 1.05rem; font-weight: 600; cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 1rem; transition: color 0.2s; }
+.faq-question:hover { color: var(--accent-gold); }
+.faq-question::after { content: '+'; font-family: var(--sans); font-size: 1.4rem; color: var(--accent-gold); transition: transform 0.3s; flex-shrink: 0; }
+.faq-item.active .faq-question::after { transform: rotate(45deg); }
+.faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.35s ease, padding 0.3s ease; }
+.faq-item.active .faq-answer { max-height: 500px; padding-bottom: 1.5rem; }
+.faq-answer p { color: var(--text-secondary); line-height: 1.75; margin-bottom: 1rem; }
+.faq-answer ul { margin-left: 1.5rem; color: var(--text-secondary); margin-bottom: 1rem; }
+.faq-answer li { margin-bottom: 0.5rem; }
+
+/* DISCLOSURE */
+.disclosure { background: var(--bg-elevated); border-top: 1px solid var(--border); text-align: center; }
+.disclosure-inner { max-width: 680px; margin: 0 auto; }
+.disclosure p { color: var(--text-secondary); font-size: 0.9rem; line-height: 1.75; }
+
+/* FOOTER */
+footer { padding: 2.5rem 2rem; text-align: center; border-top: 1px solid var(--border); }
+.footer-brand { font-family: var(--serif); font-size: 0.95rem; font-weight: 600; color: var(--text-primary); letter-spacing: 0.05em; margin-bottom: 0.4rem; }
+.footer-copy { font-size: 0.78rem; color: var(--text-muted); }
+
+/* ANIMATIONS */
+@keyframes fadeUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+.reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.6s ease, transform 0.6s ease; }
+.reveal.visible { opacity: 1; transform: translateY(0); }
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .nav-links { display: none; position: absolute; top: 100%; left: 0; right: 0; background: var(--bg); flex-direction: column; padding: 1.5rem; gap: 1rem; border-bottom: 1px solid var(--border); }
+  .nav-links.active { display: flex; }
+  .nav-toggle { display: block; }
+  .pillars-grid { grid-template-columns: 1fr; }
+  .pillar { border-right: none; border-bottom: 1px solid var(--border); }
+  .pillar:last-child { border-bottom: none; }
+  .picker-grid { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <a class="nav-logo" href="#">Home Defense Spear</a>
+  <button class="nav-toggle" aria-label="Toggle menu" onclick="document.querySelector('.nav-links').classList.toggle('active')">
+    <span></span><span></span><span></span>
+  </button>
+  <ul class="nav-links">
+    <li><a href="#products">Shop</a></li>
+    <li><a href="#why">Why Spears?</a></li>
+    <li><a href="#compare">Compare</a></li>
+    <li><a href="#faq">FAQ</a></li>
+  </ul>
+</nav>
+
+<section class="hero">
+  <div class="hero-content">
+    <p class="hero-eyebrow">No permit &middot; No noise &middot; Always ready</p>
+    <h1>Home Defense<br>Spear</h1>
+    <p class="hero-subtitle">Real weapons. No paperwork.</p>
+    <p class="hero-desc">Spears are unregulated, completely silent, and always ready. No ATF registration, no background check, no waiting period. Three picks for every home layout &mdash; from apartments to open floor plans.</p>
+    <div class="hero-cta">
+      <a class="btn btn-primary" href="#products">Shop Spears</a>
+      <a class="btn btn-secondary" href="#why">Why a Spear?</a>
+    </div>
+  </div>
+</section>
+
+<section class="pillars" id="why">
+  <div class="section-inner">
+    <div class="pillars-grid">
+      <div class="pillar reveal">
+        <span class="pillar-num">01 &mdash; No Paperwork</span>
+        <h3>No Registration Required</h3>
+        <p>Not regulated by the ATF. No background check, no waiting period, no permit required. Order today. Legal in most jurisdictions &mdash; verify your local laws before purchasing.</p>
+      </div>
+      <div class="pillar reveal">
+        <span class="pillar-num">02 &mdash; Silent</span>
+        <h3>Zero Noise</h3>
+        <p>No report. No racking a chamber. Nothing alerts the neighborhood or wakes your family. The threat is the only one who knows what happened.</p>
+      </div>
+      <div class="pillar reveal">
+        <span class="pillar-num">03 &mdash; Always Ready</span>
+        <h3>No Maintenance Required</h3>
+        <p>No magazine to load. No battery to check. No jam possible. A spear in the corner is a spear that works &mdash; tonight and every night after.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="products" id="products">
+  <div class="section-inner">
+    <span class="section-label reveal">The Arsenal</span>
+    <h2 class="section-title reveal">Three Picks. Every Home Layout.</h2>
+    <p class="section-desc reveal">Compact for tight spaces. Long for doorway control. Tactical for those who want discreet storage and fast deployment.</p>
+
+    <div class="product-grid">
+
+      <div class="product-card reveal">
+        <div class="product-info">
+          <span class="product-tag">Best for tight spaces</span>
+          <div class="product-rating">4.6&#9733; &middot; 55 reviews &middot; Amazon's Choice</div>
+          <h3>Reapr Survival Spear</h3>
+          <h4>The Compact Pick &mdash; $59.99</h4>
+          <p>44 inches. The most maneuverable option for tight hallways, stairwells, or apartments. The 8-inch double-edged 2Cr13 stainless blade delivers serious stopping power in a footprint you can actually swing indoors. Grooved fiberglass grip for accuracy under pressure. TPR snap sheath included.</p>
+          <table class="specs">
+            <tr><td>Overall</td><td>44"</td></tr>
+            <tr><td>Blade</td><td>8" double-edge, 2Cr13 stainless</td></tr>
+            <tr><td>Handle</td><td>Fiberglass nylon</td></tr>
+            <tr><td>Sheath</td><td>TPR snap included</td></tr>
+          </table>
+          <a class="btn btn-primary btn-full" href="https://amzn.to/4bWDH8w" target="_blank" rel="noopener">Check Price on Amazon &rarr;</a>
+        </div>
+      </div>
+
+      <div class="product-card featured reveal">
+        <div class="product-info">
+          <span class="product-tag">Maximum reach</span>
+          <div class="product-rating">4.3&#9733; &middot; 213 reviews</div>
+          <h3>Cold Steel Assegai Long</h3>
+          <h4>The Reach Pick &mdash; $88.83</h4>
+          <p>Six feet, nine inches. The Zulu Assegai head on a full-length American Ash shaft. At 81 inches, an intruder cannot close distance without crossing nearly 7 feet of SK-5 carbon steel first. Heat treated to spring temper &mdash; flexes under impact rather than breaking. Cold Steel quality, real battlefield pedigree.</p>
+          <table class="specs">
+            <tr><td>Overall</td><td>81" (6'9")</td></tr>
+            <tr><td>Head</td><td>13.3" SK-5 medium carbon</td></tr>
+            <tr><td>Handle</td><td>American Ash</td></tr>
+            <tr><td>Sheath</td><td>Secure-Ex included</td></tr>
+          </table>
+          <a class="btn btn-primary btn-full" href="https://amzn.to/4tf984U" target="_blank" rel="noopener">Check Price on Amazon &rarr;</a>
+        </div>
+      </div>
+
+      <div class="product-card reveal">
+        <div class="product-info">
+          <span class="product-tag">Premium &middot; Breakdown design</span>
+          <div class="product-rating">4.3&#9733; &middot; 198 reviews</div>
+          <h3>M48 Magnum Spear</h3>
+          <h4>The Tactical Pick &mdash; $139.99</h4>
+          <p>65.5 inches. The only breakdown option in this lineup &mdash; two-piece assembly with a steel sleeve, stored discreetly, deployed fast. The 10.75-inch blade carries a black oxide coating and satin finish. Fiberglass-reinforced nylon over an aluminum shaft. Vortec sheath included. The premium pick.</p>
+          <table class="specs">
+            <tr><td>Overall</td><td>65.5"</td></tr>
+            <tr><td>Blade</td><td>10.75" stainless, black oxide</td></tr>
+            <tr><td>Handle</td><td>Fiberglass nylon + aluminum</td></tr>
+            <tr><td>Design</td><td>Breaks down to 2 pieces</td></tr>
+            <tr><td>Sheath</td><td>Vortec included</td></tr>
+          </table>
+          <a class="btn btn-primary btn-full" href="https://amzn.to/4m2SoM0" target="_blank" rel="noopener">Check Price on Amazon &rarr;</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="comparison" id="compare">
+  <div class="section-inner">
+    <span class="section-label reveal">Side by Side</span>
+    <h2 class="section-title reveal">Compare All Three</h2>
+    <p class="section-desc reveal">Every spec in one place. Pick the one that fits your home.</p>
+
+    <div class="comparison-table-wrap reveal">
+      <table class="comparison-table">
+        <thead>
+          <tr>
+            <th></th>
+            <th>Reapr Survival</th>
+            <th>Cold Steel Assegai</th>
+            <th>M48 Magnum</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Price</td><td>$59.99</td><td>$88.83</td><td>$139.99</td></tr>
+          <tr><td>Overall Length</td><td>44"</td><td class="highlight">81" (6'9")</td><td>65.5"</td></tr>
+          <tr><td>Blade Length</td><td>8"</td><td>13.3"</td><td class="highlight">10.75"</td></tr>
+          <tr><td>Steel</td><td>2Cr13 stainless</td><td class="highlight">SK-5 carbon</td><td>Stainless</td></tr>
+          <tr><td>Handle</td><td>Fiberglass</td><td class="highlight">American Ash</td><td>Fiberglass + Aluminum</td></tr>
+          <tr><td>Breaks Down</td><td>No</td><td>No</td><td class="highlight">Yes</td></tr>
+          <tr><td>Sheath</td><td>TPR snap</td><td>Secure-Ex</td><td>Vortec</td></tr>
+          <tr><td>Rating</td><td class="highlight">4.6&#9733; / 55</td><td>4.3&#9733; / 213</td><td>4.3&#9733; / 198</td></tr>
+          <tr><td>Best for</td><td>Apartments, tight spaces</td><td>Doorways, open floors</td><td>Tactical, transport, storage</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <span class="section-label reveal">Quick Picker</span>
+    <h2 class="section-title reveal" style="margin-bottom: 2rem;">Which One Is Right for You?</h2>
+    <div class="picker-grid">
+      <div class="picker-card reveal">
+        <div class="picker-scenario">Small space / apartment / stairwell</div>
+        <div class="picker-rec">Reapr Survival Spear</div>
+        <div class="picker-desc">44 inches. You can actually swing it indoors. Amazon's Choice. The most accessible entry point at $59.99.</div>
+      </div>
+      <div class="picker-card reveal">
+        <div class="picker-scenario">House with hallways and doorways to control</div>
+        <div class="picker-rec">Cold Steel Assegai Long</div>
+        <div class="picker-desc">Nearly 7 feet of SK-5 carbon steel. No one closes distance through a doorway you're holding at 81 inches.</div>
+      </div>
+      <div class="picker-card reveal">
+        <div class="picker-scenario">Need discreet storage or transport</div>
+        <div class="picker-rec">M48 Magnum Spear</div>
+        <div class="picker-desc">The only breakdown option in the lineup. Stores compactly, deploys fast. The premium pick at $139.99.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="faq" id="faq">
+  <div class="section-inner">
+    <span class="section-label reveal">Common Questions</span>
+    <h2 class="section-title reveal">FAQ</h2>
+    <p class="section-desc reveal">Legality, practicality, and what to expect.</p>
+
+    <div class="faq-list">
+      <div class="faq-item reveal">
+        <button class="faq-question" onclick="this.parentElement.classList.toggle('active')">Are spears legal?</button>
+        <div class="faq-answer">
+          <p>Yes, in most jurisdictions. Spears are classified as sporting or outdoor equipment &mdash; not regulated by the ATF. No permits, background checks, or waiting periods required.</p>
+          <p><strong>However:</strong> Check your local laws. Some states have restrictions on blade length. Verify with local law enforcement if you're unsure about your jurisdiction.</p>
+        </div>
+      </div>
+
+      <div class="faq-item reveal">
+        <button class="faq-question" onclick="this.parentElement.classList.toggle('active')">Can I actually use a spear for home defense?</button>
+        <div class="faq-answer">
+          <p><strong>Legally?</strong> Spears fall under the same legal protections as baseball bats. You have the right to defend your home with reasonable force.</p>
+          <p><strong>Practically?</strong> In tight spaces, the Reapr at 44 inches is maneuverable. In a hallway or open floor plan, the Assegai Long at 81 inches controls any approach. These are real weapons with real stopping power.</p>
+        </div>
+      </div>
+
+      <div class="faq-item reveal">
+        <button class="faq-question" onclick="this.parentElement.classList.toggle('active')">Will I get sued if I use one in self-defense?</button>
+        <div class="faq-answer">
+          <p>Any use of force in self-defense carries legal risk &mdash; regardless of the weapon. What matters:</p>
+          <ul>
+            <li>You have a legal right to protect yourself and your home</li>
+            <li>Your actions should be proportional to the threat</li>
+            <li>Self-defense laws vary significantly by state</li>
+          </ul>
+          <p>Know your local self-defense laws. Consider consulting a lawyer who specializes in use-of-force cases.</p>
+        </div>
+      </div>
+
+      <div class="faq-item reveal">
+        <button class="faq-question" onclick="this.parentElement.classList.toggle('active')">Which spear should I buy?</button>
+        <div class="faq-answer">
+          <ul>
+            <li><strong>Reapr Survival (44"):</strong> Apartments, tight spaces, first-time buyers. Maneuverable indoors. Amazon's Choice.</li>
+            <li><strong>Cold Steel Assegai Long (81"):</strong> Houses with open floor plans. Maximum reach. Cold Steel quality.</li>
+            <li><strong>M48 Magnum (65.5"):</strong> Need discreet storage or plan to transport it. The only breakdown option. Premium pick.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="faq-item reveal">
+        <button class="faq-question" onclick="this.parentElement.classList.toggle('active')">Do I need training?</button>
+        <div class="faq-answer">
+          <p>Spears are more intuitive than firearms, but technique matters. A controlled thrust is more effective than wild swinging. Practical steps:</p>
+          <ul>
+            <li>Search HEMA (Historical European Martial Arts) for spear fundamentals</li>
+            <li>Practice moving through your home in low light &mdash; know your chokepoints</li>
+            <li>Learn basic doorway and gate control</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="faq-item reveal">
+        <button class="faq-question" onclick="this.parentElement.classList.toggle('active')">Is a spear better than a gun for home defense?</button>
+        <div class="faq-answer">
+          <p>That's a personal decision. Spears have specific advantages:</p>
+          <ul>
+            <li>Silent &mdash; no report, nothing alerts anyone</li>
+            <li>No recoil, no complex mechanics to operate under stress</li>
+            <li>Always ready &mdash; no magazine, no battery, no jam</li>
+            <li>No regulatory complexity</li>
+            <li>Strong psychological deterrent</li>
+          </ul>
+          <p>Firearms have different advantages. This isn't an either/or &mdash; many people have both.</p>
+        </div>
+      </div>
+
+      <div class="faq-item reveal">
+        <button class="faq-question" onclick="this.parentElement.classList.toggle('active')">How sharp are the blades?</button>
+        <div class="faq-answer">
+          <p>All three ship ready to use. The blades are designed for penetration on thrust &mdash; not slicing like a kitchen knife. Treat them accordingly. You can hone them if needed, but they perform out of the box.</p>
+        </div>
+      </div>
+
+      <div class="faq-item reveal">
+        <button class="faq-question" onclick="this.parentElement.classList.toggle('active')">How long does shipping take?</button>
+        <div class="faq-answer">
+          <p>All three ship via Amazon. Prime members get standard Prime shipping. Non-Prime follows standard delivery timelines. These are legitimate manufacturers &mdash; not dropshipped from overseas.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="disclosure">
+  <div class="section-inner disclosure-inner">
+    <span class="section-label">Disclosure</span>
+    <p>Home Defense Spear participates in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to Amazon.com. When you click a link and make a purchase, we receive a small commission at no additional cost to you. All opinions are our own.</p>
+    <p style="margin-top:0.75rem;font-size:0.82rem;color:var(--text-muted);">Always verify your local laws before purchasing. This is not legal advice.</p>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-brand">Home Defense Spear</div>
+  <p class="footer-copy">&copy; 2026 Home Defense Spear &mdash; No permit. No noise. Always ready.</p>
+</footer>
+
+<script>
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.08 });
+document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+</script>
+</body>
+</html>
